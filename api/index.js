@@ -25,7 +25,7 @@ const app = express();
 app.use(express.json());
 app.use(cookieParser());
 
-app.listen(3000, () => {
+app.listen(process.env.PORT || 3000, () => {
   console.log("server is running on port 3000!");
 });
 // api routes
